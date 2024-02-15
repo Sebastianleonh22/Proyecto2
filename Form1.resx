@@ -120,7 +120,4 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;emr=1&amp;followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;osid=1&amp;passive=1209600&amp;service=mail&amp;ifkv=ASKXGp1HwGyII5HtWuDHMa3dhJb2pSEcENUA7eot3xhHerM4SJM2-C1iuKBkDVHoxkIghVin-JBK&amp;theme=glif&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin</value>
-  </data>
 </root>

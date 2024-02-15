@@ -29,7 +29,6 @@ namespace Proyecto2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.navegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iniciioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +37,8 @@ namespace Proyecto2
             this.BotonIr = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            this.historialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +46,8 @@ namespace Proyecto2
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.navegarToolStripMenuItem});
+            this.navegarToolStripMenuItem,
+            this.historialToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1313, 24);
@@ -65,21 +67,21 @@ namespace Proyecto2
             // iniciioToolStripMenuItem
             // 
             this.iniciioToolStripMenuItem.Name = "iniciioToolStripMenuItem";
-            this.iniciioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iniciioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iniciioToolStripMenuItem.Text = "Inicio";
             this.iniciioToolStripMenuItem.Click += new System.EventHandler(this.iniciioToolStripMenuItem_Click);
             // 
             // haciaAtrasToolStripMenuItem
             // 
             this.haciaAtrasToolStripMenuItem.Name = "haciaAtrasToolStripMenuItem";
-            this.haciaAtrasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.haciaAtrasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.haciaAtrasToolStripMenuItem.Text = "Hacia atras";
             this.haciaAtrasToolStripMenuItem.Click += new System.EventHandler(this.haciaAtrasToolStripMenuItem_Click);
             // 
             // haciaAdelanteToolStripMenuItem
             // 
             this.haciaAdelanteToolStripMenuItem.Name = "haciaAdelanteToolStripMenuItem";
-            this.haciaAdelanteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.haciaAdelanteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.haciaAdelanteToolStripMenuItem.Text = "Hacia adelante";
             this.haciaAdelanteToolStripMenuItem.Click += new System.EventHandler(this.haciaAdelanteToolStripMenuItem_Click);
             // 
@@ -96,13 +98,6 @@ namespace Proyecto2
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            "https://web.whatsapp.com/",
-            "https://www.wikipedia.org/",
-            "https://es.linkedin.com/?utm_source=edge_ntp&utm_medium=top&utm_campaign=latam",
-            "https://www.microsoft.com/es-es/microsoft-365/outlook/email-and-calendar-software" +
-                "-microsoft-outlook?deeplink=%2fowa%2f&sdf=0"});
             this.comboBox1.Location = new System.Drawing.Point(276, 40);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(759, 21);
@@ -113,12 +108,26 @@ namespace Proyecto2
             this.webView21.AllowExternalDrop = true;
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView21.Location = new System.Drawing.Point(31, 98);
+            this.webView21.Location = new System.Drawing.Point(12, 98);
             this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(1219, 449);
+            this.webView21.Size = new System.Drawing.Size(1289, 560);
             this.webView21.Source = new System.Uri("https://www.microsoft.com.", System.UriKind.Absolute);
             this.webView21.TabIndex = 4;
             this.webView21.ZoomFactor = 1D;
+            // 
+            // historialToolStripMenuItem
+            // 
+            this.historialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox1});
+            this.historialToolStripMenuItem.Name = "historialToolStripMenuItem";
+            this.historialToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.historialToolStripMenuItem.Text = "Historial";
+            // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
+            this.toolStripComboBox1.Click += new System.EventHandler(this.toolStripComboBox1_Click);
             // 
             // Form1
             // 
@@ -152,6 +161,8 @@ namespace Proyecto2
         private System.Windows.Forms.Button BotonIr;
         private System.Windows.Forms.ComboBox comboBox1;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private System.Windows.Forms.ToolStripMenuItem historialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
     }
 }
 
